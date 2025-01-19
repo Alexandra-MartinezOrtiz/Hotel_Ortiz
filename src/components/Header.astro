@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Astro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+
+
+  <!-- Encabezado -->
+  <header class="bg-gray-900 text-white">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center">
+        <img src="/public/favicon.svg" alt="Hotel Logo" class="w-10 h-10 mr-2">
+        <h1 class="text-2xl font-bold">Hotel Ortiz</h1>
+      </div>
+      <nav class="flex space-x-4">
+        <a href="/" class="hover:text-gray-300">Información General</a>
+        <a href="/galeria" class="hover:text-gray-300">Galería</a>
+        <a href="/habitaciones" class="hover:text-gray-300">Habitaciones</a>
+        <a href="/contacto" class="hover:text-gray-300">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero: Imagen destacada -->
+  <section class="relative bg-cover bg-center h-96" style="background-image: url('https://via.placeholder.com/1920x1080');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+      <h2 class="text-4xl font-bold mb-4">Hotel Ortiz</h2>
+      <p class="text-lg mb-6">Una experiencia única de lujo y confort.</p>
+      <div class="flex space-x-4">
+        <a href="#reservar" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Reservar Ahora</a>
+        <a href="/contacto" class="bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Reservas -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Reserva Tu Estancia</h2>
+      <form class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <!-- Fecha de llegada -->
+          <div>
+            <label for="fecha-llegada" class="block font-semibold mb-2">Fecha de llegada</label>
+            <input type="date" id="fecha-llegada" class="w-full border border-gray-300 rounded px-3 py-2">
+          </div>
+          <!-- Fecha de salida -->
+          <div>
+            <label for="fecha-salida" class="block font-semibold mb-2">Fecha de salida</label>
+            <input type="date" id="fecha-salida" class="w-full border border-gray-300 rounded px-3 py-2">
+          </div>
+          <!-- Número de huéspedes -->
+          <div>
+            <label for="huespedes" class="block font-semibold mb-2">Huéspedes</label>
+            <select id="huespedes" class="w-full border border-gray-300 rounded px-3 py-2">
+              <option>1 Huésped</option>
+              <option>2 Huéspedes</option>
+              <option>3 Huéspedes</option>
+              <option>4 Huéspedes</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-full">Ver Disponibilidad</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Galería -->
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Galería</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="/galeria/Habitacion1.jpg" alt="Habitación 1" class="rounded-lg shadow-lg">
+        <img src="/galeria/Habitacion2.jpg" alt="Habitación 2" class="rounded-lg shadow-lg">
+        <img src="/galeria/Habitacion3.jpg" alt="Habitación 3" class="rounded-lg shadow-lg">
+
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Pie de Página -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Hotel Ortiz. Todos los derechos reservados.</p>
+      <p class="mt-2">Teléfono: +593 950 154 07 | <a href="https://goo.gl/maps" class="hover:text-gray-400">Ver en el mapa</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
